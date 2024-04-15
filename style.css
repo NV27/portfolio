@@ -1,0 +1,94 @@
+body{
+    background-color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.nav-bar {
+    background-color: rgb(56, 56, 56);
+    top: 0px;
+    color: white;
+    padding: 10px 40px;
+    margin-bottom: 20px;
+}
+
+.column-container {
+    display: flex;
+    background-color: black;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.column {
+    height: 100vh;
+    float: left;
+    overflow-y: scroll; 
+    overflow-x: none;
+    background-color: black;
+    color: aliceblue;
+    /* border-left: 10px black solid;
+    border-right: 10px black solid;
+    border-top: 20px black solid;
+    border-bottom: 20px black solid; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    width: fit-content;
+    min-width: 300px;
+  }
+
+  .column.one {
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgb(19, 0, 0) 0%, rgb(121, 9, 9) 35%, rgb(255, 75, 75) 100%);
+  }
+
+  .column.two {
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  }
+
+  .column.three {
+    background: rgb(144,137,255);
+    background: linear-gradient(0deg, rgba(144,137,255,1) 0%, rgba(123,233,255,1) 100%); 
+  }
+  
+  /* Create artificial content that extend past the viewport */
+  .content {
+    width: 80%; 
+    /* background: rgba(255, 255, 255, 1); */
+    height: 2000px;
+    margin: 50px auto;
+    line-height: 1.5em;
+    border-radius: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    color: black;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  .expander {
+    border: black 2px solid;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 50px;
+    height: 40px;
+    transition: width 1s;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .expander:hover {
+    background-color: bisque;
+    width: 600px;
+    transition: width 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }

@@ -16,29 +16,26 @@ body{
     display: flex;
     background-color: black;
     gap: 50px;
-    justify-content: space-around;
+    justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .column {
     height: 100vh;
-    float: left;
-    overflow-y: scroll;
+    /* float: left; */
+    overflow-y: auto; 
     overflow-x: hidden;
     background-color: black;
     color: aliceblue;
-    /* border-left: 10px black solid;
-    border-right: 10px black solid;
-    border-top: 20px black solid;
-    border-bottom: 20px black solid; */
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* max-width: 800px;
     width: fit-content;
-    min-width: 300px; */
+    min-width: 200px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .column.one {
@@ -58,7 +55,8 @@ body{
   
   /* Create artificial content that extend past the viewport */
   .content {
-    width: 80%; 
+    /* width: 80%;  */
+    
     /* background: rgba(255, 255, 255, 1); */
     margin: 50px auto;
     line-height: 1.5em;
@@ -73,7 +71,7 @@ body{
     padding-bottom: 20px;
     background-color: rgb(89, 100, 255);
     text-align: center;
-    width: 500px;
+    width: 1000px;
     top: 0px;
     margin-top: 0px;
 
@@ -83,15 +81,31 @@ body{
     border: black 2px solid;
     background-color: aliceblue;
     border-radius: 10px;
-    width: 50px;
-    height: 40px;
-    transition: width 1s;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 50%;
+    height: 400px;
+    transition: width 1s, height 1s;
   }
 
   .expander:hover {
     background-color: bisque;
-    width: 600px;
-    transition: width 1s;
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 120%;
+    height: 500px;
+    transition: width 1s, height 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)
+  }
+
+  .b-grid{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    max-height: none;
+    justify-content: start;
+    border: 2px black solid;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .e3{
+    margin: 20px;
+    padding: 20px;
   }

@@ -1,0 +1,11 @@
+TODO
+
+- [ ] Make a nav bar style thing at the bottom of the page that jumps you to specific sections (only visible in mobile view)
+- [ ] Get content from JSON in columns
+- [ ] Model layout and JSON content for that 
+- [ ] Icons for each section? Ie. Programming laptop, art paintpad etc
+- [ ] About me page? At the bottom or maybe a popout window from somewhere
+- [ ] Click outside model to close
+- [ ] Model button should be bigger on mobile
+
+DONE

@@ -1,0 +1,17 @@
+{
+    "data" :[
+		{     
+        "id": 1,
+        "section": "art",
+        "subsection": "3D",
+        "title": "Liberty Captain",
+        "subtitle": "Ghastlies",
+        "info": "A lone voyager seeks salvation",
+        "release-date": "",
+        "image": "images/art/ghastlies/liberty-anim.gif",
+        "link": "" 
+    },
+    {
+
+    }]
+	}

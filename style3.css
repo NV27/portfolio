@@ -265,12 +265,12 @@ h3 {
 }
 
 #model-date{
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 400;
 }
 
 #model-title{
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 800;
 }
 
@@ -282,7 +282,7 @@ h3 {
   border-radius: 10px;
   /* width: 36px;
   height: 36px; */
-  font-size: 36px;
+  font-size: 30px;
   /* font-weight: 800; */
 }
 

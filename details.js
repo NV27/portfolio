@@ -65,7 +65,7 @@ function populateModel(key){
     modelTop.innerHTML = `
         <div id="model-date">${myInfo.releaseDate}</div>
         <div id="model-title">${myInfo.title}</div>
-        <a class="close-button"><i class="fa-solid fa-square-xmark"></i></a>
+        <a class="close-button"><i class="fa-solid fa-skull"></i></a>
         `
     // modelContent.innerHTML = `
     // <div>INFOROMATION AND PICTURES AND STUFF</div>

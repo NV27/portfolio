@@ -57,7 +57,7 @@ function populateModel(key){
         d.forEach((item) => {
             if (item.id == key){
                 myInfo = item;
-                console.log(`myInfo: ${myInfo.subsection}`);
+                console.log(`myInfo: ${myInfo.title}`);
             }
         })
 
@@ -65,7 +65,7 @@ function populateModel(key){
     modelTop.innerHTML = `
         <div id="model-date">${myInfo.releaseDate}</div>
         <div id="model-title">${myInfo.title}</div>
-        <button class="close-button">x</button>
+        <a class="close-button"><i class="fa-solid fa-square-xmark"></i></a>
         `
     // modelContent.innerHTML = `
     // <div>INFOROMATION AND PICTURES AND STUFF</div>

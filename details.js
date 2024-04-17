@@ -1,16 +1,14 @@
 
-myModel = document.querySelector(".model");
-modelContent = document.querySelector(".model-content");
-closeButton = document.querySelector(".close-button");
-c1 = document.getElementById("c1-content");
-c2 = document.getElementById("c2-content");
-c3 = document.getElementById("c3-content");
+const myModel = document.querySelector(".model");
+const modelContent = document.querySelector(".model-content");
+const closeButton = document.querySelector(".close-button");
+const c1 = document.getElementById("c1-content");
+const c2 = document.getElementById("c2-content");
+const c3 = document.getElementById("c3-content");
 
-var itemsP = [];
-var itemsG = [];
-var itemsA = [];
 
-var modelOpen = 0;
+
+let modelOpen = 0;
 closeButton.addEventListener("click", () => {
     if (modelOpen == 1){
         modelOpen = 0;
@@ -40,14 +38,15 @@ function addModelOpen(){
 
 function populateColumn(cNumber, array){
     for(i=0;i<array.length;i++){
-        console.log(`myID: ${array[i].id}`)
+        console.log(`myID: ${array[i].key}`)
         cNumber.innerHTML += 
         `
         <div class="display-box">
             <h3>${array[i].title}</h3>
-            <button class="expander e3 ePic" data-key=${array[i].id}><img class="base-image" src=${array[i].image}></button>
+            <button class="expander e3 ePic" data-key=${array[i].key}><img class="base-image" src=${array[i].image}></button>
         </div>
         `
+        console.log(array);
         console.log(`HTML: ${cNumber.innerHTML}`);
     }
 }
@@ -59,20 +58,20 @@ function populateModel(key){
     }).then(data => {
         console.log(data);
         d = data.data;
-        var myInfo;
+        let myInfo;
 
         d.forEach((item) => {
             if (item.id == key){
                 myInfo = item;
-                console.log(`myInfo: ${myInfo}`);
+                console.log(`myInfo: ${myInfo.subsection}`);
             }
         })
 
     
 
-    modelContent.innerHTML = `
-    <div>INFOROMATION AND PICTURES AND STUFF</div>
-    `;
+    // modelContent.innerHTML = `
+    // <div>INFOROMATION AND PICTURES AND STUFF</div>
+    // `;
     })
 
 }
@@ -83,6 +82,9 @@ function loadJson(){
     }).then(data => {
         console.log(data);
         d = data.data;
+        const itemsP = [];
+        const itemsG = [];
+        const itemsA = [];
 
         d.forEach((item) => {
             if (item.section == "programming"){

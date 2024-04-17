@@ -17,6 +17,31 @@ var images = [
     "images/games/neon-parasite-cover.png"
 ]
 
+
+
+
+
+var items = [
+    {key: "0", title: "blueberry", image: "images/art/popsicle-pals/pp-blueberry.png"},
+    {key: "1", title: "lime", image: "images/art/popsicle-pals/pp-lime.png"}
+]
+
+
+
+
+c1.innerHTML = "";
+for(i=0;i<items.length;i++){
+    c1.innerHTML += 
+    `
+    <div class="display-box">
+        <h3>${items[i].title}</h3>
+        <button class="expander e3 ePic"><img class="base-image" src=${items[i].image}></button>
+    </div>
+    `
+}
+
+console.log("c1.innerHTML");
+
 c2.innerHTML = "";
 for(i=0;i<4;i++){
     c2.innerHTML += 
@@ -38,15 +63,17 @@ for(i=0;i<1;i++){
     `
 }
 
-e0 = document.querySelector(".ePic");
+e0 = document.querySelectorAll(".ePic");
 
-e0.addEventListener("click", () => {
-    if (modelOpen == 0){
-        modelOpen = 1;
-        
-        myModel.classList.remove("hidden");
-    }
-})
+e0.forEach(element => {
+    element.addEventListener("click", () => {
+        if (modelOpen == 0){
+            modelOpen = 1;
+            
+            myModel.classList.remove("hidden");
+        }
+    })
+});
 
 closeButton.addEventListener("click", () => {
     if (modelOpen == 1){

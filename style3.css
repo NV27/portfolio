@@ -205,6 +205,11 @@ h2 {
   height: 75%;
   padding: 10px;
   z-index: 20;
+  color: white;
+}
+
+.model-content{
+  padding: 20px;
 }
 
 .model-top{

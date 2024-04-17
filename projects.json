@@ -1,0 +1,59 @@
+{
+    "data" :[
+		{     
+        "id": "one",
+        "section": "art",
+        "subsection": "3D",
+        "title": "Liberty Captain",
+        "subtitle": "Ghastlies",
+        "info": "A lone voyager seeks salvation",
+        "release-date": "",
+        "image": "images/art/ghastlies/libertyCaptain.jpg",
+        "image2": "images/art/ghastlies/liberty-anim.gif",
+        "image3": "",
+        "image4": "",
+        "link": "",
+        "secret": "1"
+    },
+    {     
+        "id": "two",
+        "section": "art",
+        "subsection": "3D",
+        "title": "Quadropus of the Cosmos",
+        "subtitle": "Ghastlies",
+        "info": "My first ever blender project",
+        "release-date": "",
+        "image": "images/art/ghastlies/quadropus-anim.gif",
+        "image2": "images/art/ghastlies/quadropus-anim.gif",
+        "image3": "",
+        "image4": "",
+        "link": "",
+        "secret": "2"
+    },
+    {     
+        "id": "three",
+        "section": "games",
+        "subsection": "",
+        "title": "Neon Parasite",
+        "subtitle": "",
+        "info": "INFEST YOUR FRIENDS! Neon Parasite is a game of chaotic critter combat where you'll be hovering, shooting, and dashing your way around the competition to reign the most infested bug of all. This 4-player local party game boasts crazy strategic battles across a multitude of different arenas.",
+        "release-date": "",
+        "image": "images/games/neon-parasite-cover.png",
+        "image2": "images/games/neon-parasite-cover.png",
+        "link": "https://store.steampowered.com/app/1246620/Neon_Parasite",
+        "secret": "3"
+    },
+    {     
+        "id": "four",
+        "section": "programming",
+        "subsection": "IO Academy",
+        "title": "Brain Training Results",
+        "subtitle": "",
+        "info": "Our task was to recreate a brain training results screen, with both 'wide', and 'mobile' views",
+        "image": "images/programming/brain-results.png",
+        "image2": "images/programming/brain-results-mobile.png",
+        "link": "https://github.com/NV27/practice-repo",
+        "secret": "4"
+    }
+
+    ]}

@@ -1,5 +1,6 @@
 
 const myModel = document.querySelector(".model");
+const myImageViewer = document.querySelector(".image-viewer");
 const modelTop = document.querySelector(".model-top");
 const modelContent = document.querySelector(".model-content");
 const c1 = document.getElementById("c1-content");
@@ -7,9 +8,8 @@ const c2 = document.getElementById("c2-content");
 const c3 = document.getElementById("c3-content");
 
 
-
+let imageViewerOpen = 0;
 let modelOpen = 0;
-
 
 //Goes after data is loaded
 function addModelOpen(){
@@ -67,16 +67,52 @@ function populateModel(key){
         <div id="model-title">${myInfo.title}</div>
         <a class="close-button"><i class="fa-solid fa-skull"></i></a>
         `
-    // modelContent.innerHTML = `
-    // <div>INFOROMATION AND PICTURES AND STUFF</div>
-    // `;
+    modelContent.innerHTML = `
+    <div class="model-left">
+        <button class="model-image-button" id="#ib1" data-image=${myInfo.image1} data-info="${myInfo.image1Info}" alt="${myInfo.image1Alt}"><img class="model-image" src=${myInfo.image1}></button>
+        <div class="model-image-extra-box">
+            <button class="model-image-extra-button" id="#ib2" data-image=${myInfo.image2} data-info="${myInfo.image2Info}" alt="${myInfo.image2Alt}"><img class="model-image-extra" src=${myInfo.image2}></button>
+            <button class="model-image-extra-button" id="#ib3" data-image=${myInfo.image3} data-info="${myInfo.image3Info}" alt="${myInfo.image3Alt}"><img class="model-image-extra" src=${myInfo.image3}></button>
+        </div>
+    </div>
+    <div class="model-right">
+        <div class="model-info">${myInfo.info}</div>
+        <a class="model-anchor" href=${myInfo.link}><button class="model-link">${myInfo.linkTitle}</button></a>
+    </div>
+    `
 
     document.querySelector(".close-button").addEventListener("click", () => {
-        if (modelOpen == 1){
             modelOpen = 0;
-            
             myModel.classList.add("hidden");
-        }
+    })
+
+    let ib1 = document.getElementById("#ib1");
+    let ib2 = document.getElementById("#ib2");
+    let ib3 = document.getElementById("#ib3");
+    const ibList = [ib1, ib2, ib3];
+
+    ibList.forEach(imageButton => {
+        imageButton.addEventListener("click", () => {
+            if (imageViewerOpen == 0){
+                imageViewerOpen = 1;
+                
+                console.log("imageViewer Open");
+    
+                document.querySelector(".image-viewer-image-box").innerHTML =
+                `<img class="image-viewer-image" src=${imageButton.dataset.image}>`
+    
+                document.querySelector(".image-viewer-info").textContent = imageButton.dataset.info;
+
+                myImageViewer.classList.remove("hidden");
+            }
+        })
+    })
+
+    document.querySelector(".image-viewer-close").addEventListener("click", () => {
+        imageViewerOpen = 0;
+
+        console.log("imageViewer Close");
+        myImageViewer.classList.add("hidden");
     })
 
     })
@@ -95,13 +131,13 @@ function loadJson(){
 
         d.forEach((item) => {
             if (item.section == "programming"){
-                itemsP.push({key: item.id, title: item.title, image: item.image})
+                itemsP.push({key: item.id, title: item.title, image: item.image0})
             }
             if (item.section == "games"){
-                itemsG.push({key: item.id, title: item.title, image: item.image})
+                itemsG.push({key: item.id, title: item.title, image: item.image0})
             }
             if (item.section == "art"){
-                itemsA.push({key: item.id, title: item.title, image: item.image})
+                itemsA.push({key: item.id, title: item.title, image: item.image0})
             }
         })
 

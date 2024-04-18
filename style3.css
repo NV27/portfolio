@@ -1,6 +1,6 @@
 :root{
   --color0a: rgb(25, 25, 25);
-  --color0: linear-gradient(to top, rgb(16, 16, 16) 0%, rgb(42, 42, 42) 100%);
+  --color0: linear-gradient(to top, rgb(0, 0, 0) 0%, rgb(42, 42, 42) 100%);
   --color1: rgb(80, 0, 80);
   --color2: rgb(0, 80, 80);
   --color3: rgb(80, 80, 0);
@@ -54,7 +54,7 @@ body{
 .nav-name{
   background: var(--color0);
   width: 2000px;
-  padding: 0px 40px;
+  padding: 0px 20px;
   text-align: left;
   border-bottom-left-radius: 10px;
   transition: padding 1s;
@@ -85,13 +85,40 @@ body{
   background: var(--color0);
   width: 2000px;
   text-align: end;
-  padding: 0px 40px;
+  padding: 0px 20px;
   border-bottom-right-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
+  align-items: end;
+  gap: 0px;
   transition: padding 1s;
+}
+
+.nav-button{
+  display: inline;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  width: fit-content;
+  border: none;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 24px;
+  font-weight: bold;
+  right: 0px;
+  border: 0px;
+  transition: font-size 1s;
+}
+
+.nav-button:hover{
+  background: var(--colorSuper);
+  background-clip: text;
+  color: transparent;
+}
+
+#about-me{
+  margin-top: 0px;
+  transition: margin-top 1s font-size 1s;
 }
 
 .column-container {
@@ -159,10 +186,10 @@ h2 {
 
 }
 
-h3 {
+/* h3 {
   margin-bottom: 0px;
   margin-top: 0px;
-}
+} */
 
 .expander {
   border: black 5px solid;
@@ -430,7 +457,7 @@ h3 {
   background-color: black;
   color: white;
   border-radius: 5px;
-  border: none;
+  border: 2px black solid;
   width: 30px;
   height: 30px;
 }
@@ -438,7 +465,7 @@ h3 {
 .image-viewer-close:hover{
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  border: 2px black solid;
+  
 }
 
 .hidden{
@@ -477,8 +504,14 @@ h3 {
 
 @media screen and (max-width: 900px){
   h1{
+    margin-top: 24px;
     font-size: 24px;
-    transition: font-size 1s;
+    transition: font-size 1s, margin-top 1s;
+  }
+
+  #about-me{
+    margin-top: 20px;
+    transition: margin-top 1s, font-size 1s;
   }
 
 }
@@ -583,14 +616,12 @@ h3 {
   #model-title{
     font-size: 20px;
     transition: font-size 1s;
-    color: var(--colorSuper);
   }
   
   .close-button{
     font-size: 20px;
     transition: font-size 1s;
   }
-
   
 }
 
@@ -635,12 +666,12 @@ h3 {
   }
 
   .nav-extra{
-    padding: 0px 20px;
+    padding: 0px 10px;
     transition: padding 1s;
   }
 
   .nav-name{
-    padding: 0px 20px;
+    padding: 0px 10px;
     transition: padding 1s;
   }
 
@@ -648,13 +679,18 @@ h3 {
 
 @media screen and (max-width: 600px){
   h1{
-    font-size: 16px;
-    transition: font-size 1s;
+    /* font-size: 16px;
+    transition: font-size 1s; */
   }
 
-  h3{
+  /* h3{
     font-size: 14px;
     transition: font-size 1s;
+  } */
+
+  .nav-button{
+    /* font-size: 14px;
+    transition: font-size 1s; */
   }
 
   #model-date{

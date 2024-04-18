@@ -4,7 +4,10 @@
   --color1: rgb(80, 0, 80);
   --color2: rgb(0, 80, 80);
   --color3: rgb(80, 80, 0);
-  --colorAccent: rgb(0, 255, 162);
+  --color1b: rgb(0, 73, 112);
+  --color2b: rgb(0, 93, 93);
+  --color3b: rgb(0, 117, 77);
+  --colorAccent: rgb(0, 255, 229);
   --colorHover: white;
   --colorSuper2: linear-gradient(to right, rgba(255,247,0,1) 0%, rgba(255,148,25,1) 49%, rgba(255,0,213,1) 100%);
   --colorSuper: linear-gradient(to top, rgba(0,200,255,1) 0%, rgba(25,255,167,1) 49%, rgba(119,255,0,1) 100%);
@@ -149,17 +152,17 @@ body{
 
 .column.one {
   /* background: rgb(35, 35, 35); */
-  background-image: linear-gradient(0deg, var(--color1) 0%, rgba(0, 0, 0, 0)80%); 
+  background-image: linear-gradient(0deg, var(--color1b) 0%, rgba(0, 0, 0, 0)80%); 
 }
 
 .column.two {
   /* background: rgb(35, 35, 35); */
-  background-image: linear-gradient(0deg, var(--color2) 0%, rgba(0, 0, 0, 0)80%); 
+  background-image: linear-gradient(0deg, var(--color2b) 0%, rgba(0, 0, 0, 0)80%); 
 }
 
 .column.three {
   /* background: rgb(35, 35, 35); */
-  background-image: linear-gradient(0deg, var(--color3) 0%, rgba(0, 0, 0, 0)80%); 
+  background-image: linear-gradient(0deg, var(--color3b) 0%, rgba(0, 0, 0, 0)80%); 
 }
 
 .column-text {
@@ -364,7 +367,7 @@ h2 {
   width: 100%;
   height: 50px;
   margin-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 .model-link{
@@ -373,6 +376,7 @@ h2 {
   border-radius: 10px;
   border: 5px black solid;
   background: var(--colorSuper);
+  font-weight: 800;
   
 }
 
@@ -448,6 +452,12 @@ h2 {
   gap: 10px;
 }
 
+.image-viewer-left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 .image-viewer-info{
   font-size: large;
   font-weight: 800;
@@ -460,6 +470,7 @@ h2 {
   border: 2px black solid;
   width: 30px;
   height: 30px;
+  bottom: 0px;
 }
 
 .image-viewer-close:hover{
@@ -653,6 +664,7 @@ h2 {
     max-width: 100%;
     width: 100%;
     align-items: center;
+    justify-content: space-between;
   }
 
   .icon{
@@ -678,20 +690,20 @@ h2 {
 }
 
 @media screen and (max-width: 600px){
-  h1{
-    /* font-size: 16px;
-    transition: font-size 1s; */
-  }
+  /* h1{
+    font-size: 16px;
+    transition: font-size 1s;
+  } */
 
   /* h3{
     font-size: 14px;
     transition: font-size 1s;
   } */
 
-  .nav-button{
-    /* font-size: 14px;
-    transition: font-size 1s; */
-  }
+  /* .nav-button{
+    font-size: 14px;
+    transition: font-size 1s;
+  } */
 
   #model-date{
     font-size: 16px;

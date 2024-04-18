@@ -124,6 +124,31 @@
         "image4Info": "",
         "link": "https://www.artstation.com/ourlostpiano",
         "linkTitle": "See the full collection on Artstation"
+    },
+    {     
+        "id": 6,
+        "section": "games",
+        "subsection": "",
+        "title": "Doll House",
+        "subtitle": "",
+        "info": "A procedural storytelling game about subverting the lives of dolls. Made in Unreal Engine 4 as part of a six-week game jam with four other students. I was the producer, game designer, programmer, and art director. The prototype has a day/night cycle with the full version to include customization and cannibalism",
+        "releaseDate": "2016",
+        "image0": "images/games/dollhouse-main.png",
+        "image1": "images/games/dollhouse-main.png",
+        "image2": "images/games/dollhouse-dolls.jpg",
+        "image3": "images/games/dollhouse-basement.jpg",
+        "image4": "",
+        "image0Alt": "",
+        "image1Alt": "",
+        "image2Alt": "",
+        "image3Alt": "",
+        "image4Alt": "",
+        "image1Info": "Move dolls from room to room. They've got preferences.",
+        "image2Info": "Family Photo",
+        "image3Info": "Listen to smooth jazz in your radioactive basement",
+        "image4Info": "",
+        "link": "https://louisprotanogad.blogspot.com/search/label/DollHouse",
+        "linkTitle": "Read about the development on Blogger"
     }
 
     ]}

@@ -149,6 +149,31 @@
         "image4Info": "",
         "link": "https://louisprotanogad.blogspot.com/search/label/DollHouse",
         "linkTitle": "Read about the development on Blogger"
+    },
+    {     
+        "id":7,
+        "section": "programming",
+        "subsection": "",
+        "title": "Stock Trader",
+        "subtitle": "",
+        "info": "A personal self-taught python project - A text-based stock trading game based off the Animal Crossing turnip market where you have to try and out-pace your increasing rent by buying/selling fruit. It runs fully in the terminal.",
+        "releaseDate": "2023",
+        "image0": "images/programming/stockTrader-code.gif",
+        "image1": "images/programming/stockTrader-game.gif",
+        "image2": "images/programming/stockTrader-code.gif",
+        "image3": "images/programming/stockTrader-still.png",
+        "image4": "",
+        "image0Alt": "",
+        "image1Alt": "",
+        "image2Alt": "",
+        "image3Alt": "",
+        "image4Alt": "",
+        "image1Info": "The game features random stock changes and a game-over screen for running out of money",
+        "image2Info": "I defined all the functions up-front and then called them from within the main game-loop",
+        "image3Info": "The game runs in a series of while-loops and has exceptions for wrong answers",
+        "image4Info": "",
+        "link": "https://github.com/NV27/stockTrader",
+        "linkTitle": "See the project on github"
     }
 
     ]}

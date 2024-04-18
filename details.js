@@ -133,11 +133,14 @@ function loadJson(){
             if (item.section == "programming"){
                 itemsP.push({key: item.id, title: item.title, image: item.image0})
             }
-            if (item.section == "games"){
+            else if (item.section == "games"){
                 itemsG.push({key: item.id, title: item.title, image: item.image0})
             }
-            if (item.section == "art"){
+            else if (item.section == "art"){
                 itemsA.push({key: item.id, title: item.title, image: item.image0})
+            }
+            else{
+                console.log(`Project missing section`);
             }
         })
 

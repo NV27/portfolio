@@ -20,7 +20,7 @@
 
 body{
   background-color: rgb(0, 0, 0);
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   
 }
 
@@ -152,7 +152,7 @@ body{
 
 .column.one {
   /* background: rgb(35, 35, 35); */
-  background-image: linear-gradient(0deg, var(--color1b) 0%, rgba(0, 0, 0, 0)80%); 
+  background-image: linear-gradient(0deg, var(--color1b) 0%, rgba(0, 0, 0, 0)80%);
 }
 
 .column.two {
@@ -497,13 +497,12 @@ h2 {
   /* border-bottom: 1px grey solid; */
 }
 
-/* .overText{
-  z-index: 25;
-  position: relative;
-  height: 0px;
-  color: red;
-  top: 50%;
-} */
+.special{
+  background: var(--colorSuper);
+  background-clip: text;
+  color: transparent;
+  font-weight: 200;
+}
 
 .content{
   margin-bottom: 20px;
@@ -639,7 +638,7 @@ h2 {
 @media screen and (max-width: 750px){
   .model-content{
     padding: 5%;
-    margin-top: 20px;
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     gap: 0px; 
@@ -685,6 +684,10 @@ h2 {
   .nav-name{
     padding: 0px 10px;
     transition: padding 1s;
+  }
+
+  .model-info{
+    font-size: 14px;
   }
 
 }

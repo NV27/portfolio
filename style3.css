@@ -420,6 +420,68 @@ h2 {
   border: 2px rgb(255, 255, 255) solid;
 }
 
+.model-form-box{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: start;
+  width: 100%;
+  gap: 10px;
+}
+
+.form-item{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-label{
+  font-size: 16px;
+  transition: font-size 1s;
+}
+
+.text-input{
+  width: 40%;
+  background-color: transparent;
+  border: 2px white solid;
+  border-radius: 2px;
+  color: white;
+  font-weight: 800;
+  
+}
+
+.text-input:focus{
+  background: var(--colorSuper);
+  background-clip: text;
+  color: transparent;
+}
+
+.submit-box{
+  width: 100%;
+  background: var(--colorSuper);
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  border: 2px black solid;
+  border-radius: 2px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.submit-box:hover{
+  width: 100%;
+  border: 2px white solid;
+  box-shadow: 0px 0px 20px 0px rgb(0, 255, 162);
+}
+
+
+
 .image-viewer{
   max-width: 70vw;
   max-height: 80vh;
@@ -511,6 +573,20 @@ h2 {
 .mobile-buttons{
   display: none;
 }
+
+/*VERY SECRET DO NOT LOOK*/
+#secret{
+  color: transparent;
+  position: absolute;
+  right:10px;
+  top:20%;
+  font-size: 12px;
+}
+
+#secret:hover{
+  color: rgb(255, 255, 255);
+}
+/*VERY SECRET DO NOT LOOK*/
 
 @media screen and (max-width: 900px){
   h1{
@@ -632,6 +708,11 @@ h2 {
     font-size: 20px;
     transition: font-size 1s;
   }
+
+  .form-label{
+    font-size: 14px;
+    transition: font-size 1s;
+  }
   
 }
 
@@ -717,6 +798,12 @@ h2 {
     font-size: 16px;
     transition: font-size 1s;
   }
+
+  .form-label{
+    font-size: 11px;
+    transition: font-size 1s;
+  }
+
 }
 
 @media screen and (max-width: 500px){
@@ -730,4 +817,5 @@ h2 {
     font-size: 14px;
     transition: font-size 1s;
   }
+
 }

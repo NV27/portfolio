@@ -15,6 +15,7 @@ let modelOpen = 0;
 function addModelOpen(){
     e0 = document.querySelectorAll(".ePic");
     am = document.getElementById("about-me");
+    cm = document.getElementById("contact-me");
 
     e0.forEach(element => {
         element.addEventListener("click", () => {
@@ -36,6 +37,16 @@ function addModelOpen(){
             
             myModel.classList.remove("hidden");
             populateModel(am.dataset.key);
+        }
+    });
+
+    cm.addEventListener("click", () => {
+        if (modelOpen == 0){
+            modelOpen = 1;
+            
+            myModel.classList.remove("hidden");
+            populateModel(cm.dataset.key);
+            console.log("cm click")
         }
     });
 
@@ -72,7 +83,36 @@ function populateModel(key){
             }
         })
 
-    
+    //FOR CONTACT ME PAGE
+    if (myInfo.id == -1){
+        modelTop.innerHTML = `
+        <div id="model-date"></div>
+        <div id="model-title">Contact Me</div>
+        <a class="close-button"><i class="fa-solid fa-skull"></i></a>
+        `
+
+        modelContent.innerHTML = `
+        <div class="model-form-box">
+            <form class="contact-form">
+                <div class="contact-name form-item">
+                    <b class="form-label">Name: </b>
+                    <input class="text-input" id="text-input-name" type="text"/>
+                </div>
+                <div class="contact-email form-item">
+                    <b class="form-label">Email: </b>
+                    <input class="text-input" type="email"/>
+                </div>
+                <div class="contact-info form-item">
+                    <b class="form-label">What you sayin' punk? </b>
+                    <textarea class="text-input"></textarea>
+                </div>
+                <input class="submit-box" type="submit" value="SEND">
+                <b>Doesn't actually send anything yet - Just email me at lprotanogames@gmail.com</b>
+            </form>
+        <div>
+        `
+    }
+    else{ //FOR EVERY OTHER MODEL
     modelTop.innerHTML = `
         <div id="model-date">${myInfo.releaseDate}</div>
         <div id="model-title">${myInfo.title}</div>
@@ -91,6 +131,7 @@ function populateModel(key){
         <a class="model-anchor" href=${myInfo.link}><button class="model-link">${myInfo.linkTitle}</button></a>
     </div>
     `
+    }
 
     document.querySelector(".close-button").addEventListener("click", () => {
             modelOpen = 0;

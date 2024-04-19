@@ -1,6 +1,31 @@
 {
     "data" :[
         {     
+        "id":-1,
+        "section": "",
+        "subsection": "",
+        "title": "Contact Me",
+        "subtitle": "",
+        "info": "",
+        "releaseDate": "",
+        "image0": "",
+        "image1": "",
+        "image2": "",
+        "image3": "",
+        "image4": "",
+        "image0Alt": "",
+        "image1Alt": "",
+        "image2Alt": "",
+        "image3Alt": "",
+        "image4Alt": "",
+        "image1Info": "",
+        "image2Info": "",
+        "image3Info": "",
+        "image4Info": "",
+        "link": "",
+        "linkTitle": ""
+        },
+        {     
         "id":0,
         "section": "ethereal realm",
         "subsection": "",
@@ -199,6 +224,31 @@
         "image4Info": "",
         "link": "https://github.com/NV27/stockTrader",
         "linkTitle": "See the project on github"
+    },
+    {     
+        "id":8,
+        "section": "programming",
+        "subsection": "",
+        "title": "This Website",
+        "subtitle": "",
+        "info": "Developed in HTML, CSS, and Javascript with projects and columns automatically populated from a separate json file. The page is fully responsive and works in both wide and mobile views. Try it! ",
+        "releaseDate": "2024",
+        "image0": "images/programming/website-main.png",
+        "image1": "images/programming/website-main.png",
+        "image2": "images/programming/website-css.png",
+        "image3": "images/programming/website-js.png",
+        "image4": "",
+        "image0Alt": "",
+        "image1Alt": "",
+        "image2Alt": "",
+        "image3Alt": "",
+        "image4Alt": "",
+        "image1Info": "It's the same but somehow different...",
+        "image2Info": "CSS",
+        "image3Info": "Javascript",
+        "image4Info": "",
+        "link": "https://github.com/NV27/portfolio",
+        "linkTitle": "See the code on github"
     }
 
     ]}

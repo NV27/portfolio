@@ -1,43 +1,16 @@
 TODO
-
-- [ ] Get content from JSON in columns
-- [ ] Model layout and JSON content for that 
-- [ ] Icons for each section? Ie. Programming laptop, art paintpad etc
-- [ ] About me page? At the bottom or maybe a popout window from somewhere
 - [ ] Click outside model to close
-- [ ] Model button should be bigger on mobile
-- [ ] Check Wave and go through all the accessibility things (mostly just adding labels to stuff)
-- [ ] Nav bar could do with rearranging below a certain width. Text could get smaller?
-
+- [ ] CV page with interactive elements and eyes that follow cursor
+- [ ] Make it so you can add/ remove columns
 
 DONE
 - [x] Apply model click to all items
 - [x] Model items as object and display information from each items
 - [x] Make a nav bar style thing at the bottom of the page that jumps you to specific sections (only visible in mobile view)
-
-
-CODE STORAGE
-<!-- MODEL -->
-            <div class="model hidden">
-                <div class="model-top">
-                    <div id="model-date">00-00-00</div>
-                    <div id="model-title">TITLE</div>
-                    <button class="close-button">x</button>
-                </div>
-                <div class="model-content">
-                    <div class="model-tm">
-                        
-                    </div>
-                    <div class="model-mm">
-                        <img class="model-image" src="images/art/popsicle-pals/pp-pineapple.png">
-                        <div>loads of cool information about the artwork or project or whatever</div>
-                    </div>
-                </div>
-                <div class="model-extra">
-                    <div class="model-image-extra-box">
-                        <img class="model-image-extra" src="images/art/popsicle-pals/pp-strawberry.png">
-                        <img class="model-image-extra" src="images/art/popsicle-pals/pp-strawberry.png">
-                    </div>
-                    <button class="model-link">LINK</button>
-                </div>
-            </div>
+- [x] Model button should be bigger on mobile
+- [x] Check Wave and go through all the accessibility things (mostly just adding labels to stuff)
+- [x] Nav bar could do with rearranging below a certain width. Text could get smaller?
+- [x] Get content from JSON in columns
+- [x] Model layout and JSON content for that 
+- [x] Icons for each section? Ie. Programming laptop, art paintpad etc
+- [x] About me page? At the bottom or maybe a popout window from somewhere

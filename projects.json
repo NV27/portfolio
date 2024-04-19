@@ -1,5 +1,30 @@
 {
     "data" :[
+        {     
+        "id":0,
+        "section": "ethereal realm",
+        "subsection": "",
+        "title": "Louis Protano",
+        "subtitle": "",
+        "info": "Born in London, raised in Sheffield. I'm both creative and technical. I have a love for design and always have a project on the go. I studied 'Visual Communication' at Chesterfield College in 2013, then went on to study 'Games Art and Design' at Norwich University of the Arts 2014 - 2017. Since then I've been working as an indie game dev and all-round creative.",
+        "releaseDate": "1994",
+        "image0": "",
+        "image1": "images/other/louisprotano.jpg",
+        "image2": "",
+        "image3": "",
+        "image4": "",
+        "image0Alt": "",
+        "image1Alt": "",
+        "image2Alt": "",
+        "image3Alt": "",
+        "image4Alt": "",
+        "image1Info": "It's Me!",
+        "image2Info": "",
+        "image3Info": "",
+        "image4Info": "",
+        "link": "index.html",
+        "linkTitle": "See my CV"
+        },
 		{     
         "id": 1,
         "section": "art",

@@ -14,6 +14,7 @@ let modelOpen = 0;
 //Goes after data is loaded
 function addModelOpen(){
     e0 = document.querySelectorAll(".ePic");
+    am = document.getElementById("about-me");
 
     e0.forEach(element => {
         element.addEventListener("click", () => {
@@ -28,6 +29,16 @@ function addModelOpen(){
             
         })
     });
+
+    am.addEventListener("click", () => {
+        if (modelOpen == 0){
+            modelOpen = 1;
+            
+            myModel.classList.remove("hidden");
+            populateModel(am.dataset.key);
+        }
+    });
+
 }
 
 function populateColumn(cNumber, array){

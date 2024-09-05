@@ -1,7 +1,11 @@
 TODO
 - [ ] Click outside model to close
 - [ ] CV page with interactive elements and eyes that follow cursor
-- [ ] Make it so you can add/ remove columns
+- [ ] Make it so you can maximize/minimize columns by clicking on headings (The others squish into the side with no content)
+- [ ] Make it so when there's less than 3 images in a project it doesn't create empty boxes
+- [ ] Fix scaling on large monitors >= 2560 x 1440 (only broken on firefox)
+- [ ] More info about 3D
+- [ ] Add other 3D projects
 
 DONE
 - [x] Apply model click to all items
@@ -14,3 +18,4 @@ DONE
 - [x] Model layout and JSON content for that 
 - [x] Icons for each section? Ie. Programming laptop, art paintpad etc
 - [x] About me page? At the bottom or maybe a popout window from somewhere
+- [x] Brought title text a bit closer to it's associated image to make it clearer which is which

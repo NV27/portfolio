@@ -119,6 +119,10 @@ body{
   color: transparent;
 }
 
+#cv-link {
+  text-decoration: none;
+}
+
 #about-me{
   margin-top: 0px;
   transition: margin-top 1s font-size 1s;
@@ -230,6 +234,7 @@ h2 {
 
 .e3{
   margin: 20px;
+  margin-top: 0px;
   overflow: hidden;
   /* padding: 20px; */
   background-color: black;
@@ -572,6 +577,12 @@ h2 {
 
 .mobile-buttons{
   display: none;
+}
+
+.email-address {
+  /*text-align: center;*/
+  font-size: larger;
+  font-weight: bold;
 }
 
 /*VERY SECRET DO NOT LOOK*/

@@ -93,22 +93,26 @@ function populateModel(key){
 
         modelContent.innerHTML = `
         <div class="model-form-box">
-            <form class="contact-form">
-                <div class="contact-name form-item">
-                    <b class="form-label">Name: </b>
-                    <input class="text-input" id="text-input-name" type="text"/>
-                </div>
-                <div class="contact-email form-item">
-                    <b class="form-label">Email: </b>
-                    <input class="text-input" type="email"/>
-                </div>
-                <div class="contact-info form-item">
-                    <b class="form-label">What you sayin' punk? </b>
-                    <textarea class="text-input"></textarea>
-                </div>
-                <input class="submit-box" type="submit" value="SEND">
-                <b>Doesn't actually send anything yet - Just email me at lprotanogames@gmail.com</b>
-            </form>
+<!--            <form class="contact-form">-->
+<!--                <div class="contact-name form-item">-->
+<!--                    <b class="form-label">Name: </b>-->
+<!--                    <input class="text-input" id="text-input-name" type="text"/>-->
+<!--                </div>-->
+<!--                <div class="contact-email form-item">-->
+<!--                    <b class="form-label">Email: </b>-->
+<!--                    <input class="text-input" type="email"/>-->
+<!--                </div>-->
+<!--                <div class="contact-info form-item">-->
+<!--                    <b class="form-label">What you sayin' punk? </b>-->
+<!--                    <textarea class="text-input"></textarea>-->
+<!--                </div>-->
+<!--                <input class="submit-box" type="submit" value="SEND">-->
+<!--                <b>Doesn't actually send anything yet - Just email me at lprotanogames@gmail.com</b>-->
+<!--            </form>-->
+            <div class="contact-form">
+<!--                <b class="email-address">lprotanogames@gmail.com </b>-->
+                <a class="model-anchor" href="images/louisProtano-CV.pdf" target="_blank"><button class="model-link">See my CV</button></a>
+            </div>
         <div>
         `
     }
@@ -128,7 +132,7 @@ function populateModel(key){
     </div>
     <div class="model-right">
         <div class="model-info">${myInfo.info}</div>
-        <a class="model-anchor" href=${myInfo.link}><button class="model-link">${myInfo.linkTitle}</button></a>
+        <a class="model-anchor" href=${myInfo.link} target="_blank"><button class="model-link">${myInfo.linkTitle}</button></a>
     </div>
     `
     }

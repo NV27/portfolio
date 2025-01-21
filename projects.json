@@ -81,7 +81,7 @@
             "subsection": "Game Maker",
             "title": "Super Terrestrial",
             "subtitle": "",
-            "info": "Super Terrestrial is an upcoming endless runner / endless climber with rogue-like elements. ",
+            "info": "Super Terrestrial is an upcoming endless runner / endless climber with rogue-like elements. Its procedurally generated levels guarantee no 2 runs will ever be the same. The game features multiple unlockable game-modes and characters for progression between runs. Set to release 2025 for PC and Mobile",
             "releaseDate": "In Development - 2025",
             "image0": "images/games/superTerrestrial00.jpeg",
             "image1": "images/games/superTerrestrial00.jpeg",
@@ -97,8 +97,8 @@
             "image2Info": "",
             "image3Info": "",
             "image4Info": "",
-            "link": "",
-            "linkTitle": ""
+            "link": "https://www.youtube.com/watch?v=CnaooK-ZMNc",
+            "linkTitle": "Gameplay Video"
         },
 		{     
             "id": 1,

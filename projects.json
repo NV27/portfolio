@@ -50,6 +50,56 @@
             "link": "images/louisProtano-CV.pdf",
             "linkTitle": "See my CV"
         },
+        {
+            "id": 22,
+            "section": "programming",
+            "subsection": "",
+            "title": "Donations Website",
+            "subtitle": "",
+            "info": "A donations website built in React. Each 'page' is live updated using react routes / links. TODO: Backend to be built with Laravel/PHP linking to Just Giving API and deployed on AWS",
+            "releaseDate": "In Development - 2025",
+            "image0": "images/programming/new/DonationsDonate.png",
+            "image1": "images/programming/new/DonationsDonate.png",
+            "image2": "images/programming/new/donationsAbout.png",
+            "image3": "images/programming/new/donationsBlog.png",
+            "image4": "",
+            "image0Alt": "",
+            "image1Alt": "",
+            "image2Alt": "",
+            "image3Alt": "",
+            "image4Alt": "",
+            "image1Info": "Donations Page",
+            "image2Info": "About Page",
+            "image3Info": "Blog Page: For client to populate with JSON similar to how this website works",
+            "image4Info": "",
+            "link": "",
+            "linkTitle": ""
+        },
+        {
+            "id": 21,
+            "section": "games",
+            "subsection": "Game Maker",
+            "title": "Super Terrestrial",
+            "subtitle": "",
+            "info": "Super Terrestrial is an upcoming endless runner / endless climber with rogue-like elements. ",
+            "releaseDate": "In Development - 2025",
+            "image0": "images/games/superTerrestrial00.jpeg",
+            "image1": "images/games/superTerrestrial00.jpeg",
+            "image2": "images/games/superTerrestrial01.jpeg",
+            "image3": "images/games/superTerrestrial02.jpeg",
+            "image4": "",
+            "image0Alt": "",
+            "image1Alt": "",
+            "image2Alt": "",
+            "image3Alt": "",
+            "image4Alt": "",
+            "image1Info": "",
+            "image2Info": "",
+            "image3Info": "",
+            "image4Info": "",
+            "link": "",
+            "linkTitle": ""
+        },
 		{     
             "id": 1,
             "section": "art",
@@ -525,5 +575,6 @@
             "link": "https://linkgi.itch.io/parasite-x",
             "linkTitle": "Download the game on itch.io"
         }
+
     ]
 }

@@ -6,6 +6,9 @@ const modelContent = document.querySelector(".model-content");
 const c1 = document.getElementById("c1-content");
 const c2 = document.getElementById("c2-content");
 const c3 = document.getElementById("c3-content");
+const titleButton1 = document.getElementById("c1");
+const titleButton2 = document.getElementById("c2");
+const titleButton3 = document.getElementById("c3");
 
 
 let imageViewerOpen = 0;
@@ -93,48 +96,50 @@ function populateModel(key){
 
         modelContent.innerHTML = `
         <div class="model-form-box">
-<!--            <form class="contact-form">-->
-<!--                <div class="contact-name form-item">-->
-<!--                    <b class="form-label">Name: </b>-->
-<!--                    <input class="text-input" id="text-input-name" type="text"/>-->
-<!--                </div>-->
-<!--                <div class="contact-email form-item">-->
-<!--                    <b class="form-label">Email: </b>-->
-<!--                    <input class="text-input" type="email"/>-->
-<!--                </div>-->
-<!--                <div class="contact-info form-item">-->
-<!--                    <b class="form-label">What you sayin' punk? </b>-->
-<!--                    <textarea class="text-input"></textarea>-->
-<!--                </div>-->
-<!--                <input class="submit-box" type="submit" value="SEND">-->
-<!--                <b>Doesn't actually send anything yet - Just email me at lprotanogames@gmail.com</b>-->
-<!--            </form>-->
             <div class="contact-form">
-<!--                <b class="email-address">lprotanogames@gmail.com </b>-->
                 <a class="model-anchor" href="images/louisProtano-CV.pdf" target="_blank"><button class="model-link">See my CV</button></a>
             </div>
         <div>
         `
     }
     else{ //FOR EVERY OTHER MODEL
-    modelTop.innerHTML = `
+
+        let imgdata = ``;
+        if (myInfo.image3 !== "") {
+            imgdata = `
+                <button class="model-image-extra-button" id="#ib2" data-image=${myInfo.image2} data-info="${myInfo.image2Info}" alt="${myInfo.image2Alt}"><img class="model-image-extra" src=${myInfo.image2}></button>
+                <button class="model-image-extra-button" id="#ib3" data-image=${myInfo.image3} data-info="${myInfo.image3Info}" alt="${myInfo.image3Alt}"><img class="model-image-extra" src=${myInfo.image3}></button>
+                `
+        }
+        else if (myInfo.image2 !== ""){
+            imgdata = `
+                <button class="model-image-extra-button" id="#ib2" data-image=${myInfo.image2} data-info="${myInfo.image2Info}" alt="${myInfo.image2Alt}"><img class="model-image-extra" src=${myInfo.image2}></button>
+               `
+        }
+
+        let linkdata = ``;
+        if (myInfo.link !== "") {
+            linkdata = `
+            <a class="model-anchor" href=${myInfo.link} target="_blank"><button class="model-link">${myInfo.linkTitle}</button></a>`
+        }
+
+        modelTop.innerHTML = `
         <div id="model-date">${myInfo.releaseDate}</div>
         <div id="model-title">${myInfo.title}</div>
         <a class="close-button"><i class="fa-solid fa-skull"></i></a>
         `
-    modelContent.innerHTML = `
-    <div class="model-left">
-        <button class="model-image-button" id="#ib1" data-image=${myInfo.image1} data-info="${myInfo.image1Info}" alt="${myInfo.image1Alt}"><img class="model-image" src=${myInfo.image1}></button>
-        <div class="model-image-extra-box">
-            <button class="model-image-extra-button" id="#ib2" data-image=${myInfo.image2} data-info="${myInfo.image2Info}" alt="${myInfo.image2Alt}"><img class="model-image-extra" src=${myInfo.image2}></button>
-            <button class="model-image-extra-button" id="#ib3" data-image=${myInfo.image3} data-info="${myInfo.image3Info}" alt="${myInfo.image3Alt}"><img class="model-image-extra" src=${myInfo.image3}></button>
+        modelContent.innerHTML = `
+        <div class="model-left">
+            <button class="model-image-button" id="#ib1" data-image=${myInfo.image1} data-info="${myInfo.image1Info}" alt="${myInfo.image1Alt}"><img class="model-image" src=${myInfo.image1}></button>
+            <div class="model-image-extra-box">
+                ${imgdata}
+            </div>
         </div>
-    </div>
-    <div class="model-right">
-        <div class="model-info">${myInfo.info}</div>
-        <a class="model-anchor" href=${myInfo.link} target="_blank"><button class="model-link">${myInfo.linkTitle}</button></a>
-    </div>
-    `
+        <div class="model-right">
+            <div class="model-info">${myInfo.info}</div>
+            ${linkdata}
+        </div>
+        `
     }
 
     document.querySelector(".close-button").addEventListener("click", () => {
@@ -180,19 +185,19 @@ function loadJson(){
         return response.json()
     }).then(data => {
         console.log(data);
-        d = data.data;
+        let d = data.data;
         const itemsP = [];
         const itemsG = [];
         const itemsA = [];
 
         d.forEach((item) => {
-            if (item.section == "programming"){
+            if (item.section === "programming"){
                 itemsP.push({key: item.id, title: item.title, image: item.image0})
             }
-            else if (item.section == "games"){
+            else if (item.section === "games"){
                 itemsG.push({key: item.id, title: item.title, image: item.image0})
             }
-            else if (item.section == "art"){
+            else if (item.section === "art"){
                 itemsA.push({key: item.id, title: item.title, image: item.image0})
             }
             else{
@@ -206,6 +211,24 @@ function loadJson(){
 
         addModelOpen();
     })
+}
+
+function toggleBigColumn(columnName) {
+    if (columnName === "programming"){
+        titleButton1.classList.toggle("big");
+        titleButton2.classList.remove("big");
+        titleButton3.classList.remove("big");
+    }
+    if (columnName === "games"){
+        titleButton2.classList.toggle("big");
+        titleButton1.classList.remove("big");
+        titleButton3.classList.remove("big");
+    }
+    if (columnName === "art") {
+        titleButton3.classList.toggle("big");
+        titleButton1.classList.remove("big");
+        titleButton2.classList.remove("big");
+    }
 }
 
 loadJson();

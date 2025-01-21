@@ -10,7 +10,6 @@ const titleButton1 = document.getElementById("c1");
 const titleButton2 = document.getElementById("c2");
 const titleButton3 = document.getElementById("c3");
 
-
 let imageViewerOpen = 0;
 let modelOpen = 0;
 
@@ -192,19 +191,22 @@ function loadJson(){
 
         d.forEach((item) => {
             if (item.section === "programming"){
-                itemsP.push({key: item.id, title: item.title, image: item.image0})
+                itemsP.push({key: item.id, title: item.title, image: item.image0, date: item.releaseDate})
             }
             else if (item.section === "games"){
-                itemsG.push({key: item.id, title: item.title, image: item.image0})
+                itemsG.push({key: item.id, title: item.title, image: item.image0, date: item.releaseDate})
             }
             else if (item.section === "art"){
-                itemsA.push({key: item.id, title: item.title, image: item.image0})
+                itemsA.push({key: item.id, title: item.title, image: item.image0, date: item.releaseDate})
             }
             else{
                 console.log(`Project missing section`);
             }
         })
 
+        itemsP.sort((a, b) => b.date.localeCompare(a.date));
+        itemsG.sort((a, b) => b.date.localeCompare(a.date));
+        itemsA.sort((a, b) => b.date.localeCompare(a.date));
         populateColumn(c1, itemsP);
         populateColumn(c2, itemsG);
         populateColumn(c3, itemsA);

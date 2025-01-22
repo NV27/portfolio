@@ -56,7 +56,7 @@
             "subsection": "",
             "title": "Donations Website",
             "subtitle": "",
-            "info": "A donations website built in React. Each 'page' is live updated using react routes / links. TODO: Backend to be built with Laravel/PHP linking to Just Giving API and deployed on AWS",
+            "info": "A donations website built in React. Each 'page' is live updated using react routes / links. It's also responsive. Designed using Figma. TODO: Backend to be built with Laravel/PHP linking to Just Giving API and deployed on AWS",
             "releaseDate": "In Development - 2025",
             "image0": "images/programming/new/DonationsDonate.png",
             "image1": "images/programming/new/DonationsDonate.png",
@@ -72,8 +72,8 @@
             "image2Info": "About Page",
             "image3Info": "Blog Page: For client to populate with JSON similar to how this website works",
             "image4Info": "",
-            "link": "",
-            "linkTitle": ""
+            "link": "https://github.com/NV27/donations-website",
+            "linkTitle": "Check out the repo on github"
         },
         {
             "id": 21,
